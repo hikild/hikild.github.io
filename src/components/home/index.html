@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script
+      src="https://example.com/fontawesome/v5.15.4/js/all.js"
+      data-search-pseudo-elements
+    ></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Resumefy</title>
+  </head>
+  <body>
+    <div class="switch">
+      <input
+        id="language-toggle"
+        class="check-toggle check-toggle-round-flat"
+        type="checkbox"
+      />
+      <label for="language-toggle"></label>
+      <span class="on" value="en">EN</span>
+      <span class="off" value="ptbr">PT-BR</span>
+    </div>
+    <div class="window-container">
+      <div class="window-content">
+        <div class="mac-bar">
+          <div class="mac-buttons">
+            <span id="red"></span><span id="yellow"></span
+            ><span id="green"></span>
+          </div>
+        </div>
+        <div class="container">
+          <aside>
+            <div class="wrapper">
+              <div class="sidebar">
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/hikild/"
+                      target="_blank"
+                    >
+                      <span class="material-symbols-outlined"> home </span>
+                      Linkedin</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://github.com/hikild" target="_blank">
+                      <span class="material-symbols-outlined"> grade </span>
+                      Github</a
+                    >
+                  </li>
+
+                  <li>
+                    <a href="#about" id="about">
+                      <span class="material-symbols-outlined"> search </span>
+                      About</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#experience" id="experience">
+                      <span class="material-symbols-outlined">
+                        library_books
+                      </span>
+                      Experiences</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#education" id="education">
+                      <span class="material-symbols-outlined"> school </span>
+                      Education</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" id="playlist">
+                      <span class="material-symbols-outlined"> add_box </span>
+                      Create Playlist</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" id="song">
+                      <span class="material-symbols-outlined"> favorite </span>
+                      Liked Songs</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+          <div class="wrapper-content">
+            <section class="header">
+              <div class="profile-pic">
+                <img
+                  src="../../../assets/profile.jpeg"
+                  alt="hithalo kildaree profile picture"
+                />
+              </div>
+              <div class="infos-container">
+                <p>PROFILE</p>
+                <h1 class="text-name">Híthalo Kildaree</h1>
+                <div class="infos">
+                  <p>2 Public Playlist</p>
+                  <p>•</p>
+                  <p>562 Followers</p>
+                  <p>•</p>
+                  <p>368 Following</p>
+                </div>
+              </div>
+            </section>
+            <section class="experiences">
+              <section class="about" id="about">
+                <h1>About</h1>
+                <p>Hello there! 👋</p>
+                <p>
+                  I've been working in tech companies since 2019, I succeed to
+                  grow my programming skills in different areas. My practical
+                  experience is with Frontend Developer creating and maintaining
+                  user-friendly, responsive web applications. Proficient in
+                  HTML, CSS, JavaScript, and various frontend frameworks. Strong
+                  collaboration and problem-solving skills with a keen eye for
+                  detail. Passionate about creating visually appealing and
+                  intuitive web experiences that engage users.
+                </p>
+              </section>
+              <section class="experience" id="experience">
+                <h1 class="heading-text">Experience</h1>
+                <div class="companies"></div>
+              </section>
+              <section class="education" id="education">
+                <div class="college">
+                  <h1 class="heading-text">Education</h1>
+                  <img src="../../../assets/infnet.jpeg" alt="infnet logo" />
+                  <p class="title-text">Instituto Infnet</p>
+                  <p class="description-text">
+                    System Analysis and Development ∙ 2019 - 2023
+                  </p>
+                </div>
+              </section>
+            </section>
+          </div>
+        </div>
+        <footer>
+          <div class="player-wrapper"></div>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
