@@ -1,26 +1,26 @@
 const COMPANIES_DATA = [
   {
-    logo: "../../../assets/levva.jpeg",
+    logo: "../assets/levva.jpeg",
     name: "Levva",
     role: "Desenvolvedor Frontend Pleno",
   },
   {
-    logo: "../../../assets/cpqi.jpeg",
+    logo: "../assets/cpqi.jpeg",
     name: "CPQi Group",
     role: "Desenvolvedor Frontend Junior",
   },
   {
-    logo: "../../../assets/govbr.jpeg",
+    logo: "../assets/govbr.jpeg",
     name: "GOVBR",
     role: "Desenvolvedor Frontend Junior",
   },
   {
-    logo: "../../../assets/petros.jpeg",
+    logo: "../assets/petros.jpeg",
     name: "Petros",
     role: "Estágio em Desenvolvimento de Software",
   },
   {
-    logo: "../../../assets/ibge.jpeg",
+    logo: "../assets/ibge.jpeg",
     name: "IBGE",
     role: "Estágio em Desenvolvimento de Software",
   },
@@ -32,7 +32,7 @@ const heartIcon = document.getElementById("heart");
 const addFavorite = document.querySelector("#add-favorite");
 
 function updatePlayer() {
-  audio_player.src = "../../../music/song.mp3";
+  audio_player.src = "../music/song.mp3";
 }
 
 updatePlayer();
