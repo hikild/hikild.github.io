@@ -242,6 +242,8 @@ section.header {
 
 div.profile-pic img {
   width: 100%;
+  min-width: 10rem;
+  min-height: 10rem;
   max-width: 15rem;
   max-height: 15rem;
   border-radius: 50%;
@@ -263,7 +265,7 @@ div.infos-container p {
 h1.text-name {
   color: #fff;
   width: 100%;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 900;
 }
 
@@ -383,7 +385,7 @@ p.title-text {
 
 p.description-text {
   font-size: 0.8rem;
-  margin-top: 0.4rem;
+  margin-top: 0.7rem;
   font-weight: lighter;
   margin-left: 1rem;
   color: #a7a7a7;
@@ -429,7 +431,115 @@ footer {
 footer div.player-wrapper {
   width: 100%;
   height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #181818;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+footer div.player-content {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div.player-content span {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+footer div.player-content div.player-event {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div.album-cover img {
+  max-width: 4rem;
+}
+footer div.album-cover p.title-text {
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+footer div.album-cover p.description-text {
+  font-size: 0.7rem;
+}
+
+footer div.album-cover span {
+  font-size: 1.3rem;
+}
+
+footer div.album-cover {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span.bold-text {
+  font-weight: 900;
+}
+span.link-text {
+  color: #1cd760;
+  display: block;
+}
+
+.animation {
+  display: block;
+  font-size: ms(2);
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  box-shadow: none;
+  transition: all 0.2s ease;
+  color: #cbcdce;
+  margin: 0;
+}
+
+.animation .active {
+  color: #1cd760;
+}
+
+.animation:hover {
+  animation: favme-hover 0.3s infinite alternate;
+}
+
+@keyframes favme-anime {
+  0% {
+    opacity: 1;
+    font-size: ms(0);
+    -webkit-text-stroke-color: transparent;
+  }
+  25% {
+    opacity: 0.6;
+    color: #fff;
+    font-size: ms(-2);
+    -webkit-text-stroke-width: 1px;
+  }
+  75% {
+    opacity: 0.6;
+    color: #fff;
+    font-size: ms(3);
+    -webkit-text-stroke-width: 1px;
+  }
+  100% {
+    opacity: 1;
+    font-size: ms(2);
+    -webkit-text-stroke-color: transparent;
+  }
+}
+
+@keyframes favme-hover {
+  from {
+    font-size: ms(3);
+  }
+  80% {
+    font-size: ms(2);
+  }
 }

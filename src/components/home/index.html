@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="../../../assets/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,8 +12,8 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <script
       src="https://example.com/fontawesome/v5.15.4/js/all.js"
@@ -52,35 +53,35 @@
                   </li>
 
                   <li>
-                    <a href="#about" id="about">
+                    <a href="#about">
                       <span class="material-symbols-outlined"> search </span>
-                      About</a
+                      Sobre</a
                     >
                   </li>
                   <li>
-                    <a href="#experience" id="experience">
+                    <a href="#experience">
                       <span class="material-symbols-outlined">
                         library_books
                       </span>
-                      Experiences</a
+                      Experiência</a
                     >
                   </li>
                   <li>
-                    <a href="#education" id="education">
+                    <a href="#education">
                       <span class="material-symbols-outlined"> school </span>
-                      Education</a
+                      Educação</a
                     >
                   </li>
                   <li>
-                    <a href="#" id="playlist">
+                    <a href="#">
                       <span class="material-symbols-outlined"> add_box </span>
-                      Create Playlist</a
+                      Criar Playlist</a
                     >
                   </li>
                   <li>
-                    <a href="#" id="song">
+                    <a href="#">
                       <span class="material-symbols-outlined"> favorite </span>
-                      Liked Songs</a
+                      Músicas Curtidas</a
                     >
                   </li>
                 </ul>
@@ -96,43 +97,69 @@
                 />
               </div>
               <div class="infos-container">
-                <p>PROFILE</p>
+                <p>PERFIL</p>
                 <h1 class="text-name">Híthalo Kildaree</h1>
                 <div class="infos">
-                  <p>2 Public Playlist</p>
+                  <p>2 Playlists Públicas</p>
                   <p>•</p>
-                  <p>562 Followers</p>
+                  <p>562 Seguidores</p>
                   <p>•</p>
-                  <p>368 Following</p>
+                  <p>368 Seguindo</p>
                 </div>
               </div>
             </section>
             <section class="experiences">
               <section class="about" id="about">
-                <h1>About</h1>
-                <p>Hello there! 👋</p>
+                <h1>Sobre</h1>
+                <p>Olá! 👋</p>
                 <p>
-                  I've been working in tech companies since 2019, I succeed to
-                  grow my programming skills in different areas. My practical
-                  experience is with Frontend Developer creating and maintaining
-                  user-friendly, responsive web applications. Proficient in
-                  HTML, CSS, JavaScript, and various frontend frameworks. Strong
-                  collaboration and problem-solving skills with a keen eye for
-                  detail. Passionate about creating visually appealing and
-                  intuitive web experiences that engage users.
+                  Analista de sistemas há 5 anos, atuo como desenvolvedor
+                  front-end. Passei por algumas empresas nacionais e
+                  multinacionais com grandes clientes e projetos complexos. Boa
+                  comunicação e experiência com metodologias ágeis, possuo
+                  conhecimentos de todos os rituais do modelo ágil,
+                  conhecimentos dos principais frameworks front-end como React,
+                  Angular e Vue. Conhecimentos de backend com NodeJs e Java,
+                  banco de dados com MySql.
                 </p>
               </section>
               <section class="experience" id="experience">
-                <h1 class="heading-text">Experience</h1>
+                <h1 class="heading-text">Experiência</h1>
                 <div class="companies"></div>
               </section>
               <section class="education" id="education">
                 <div class="college">
-                  <h1 class="heading-text">Education</h1>
+                  <h1 class="heading-text">Educação</h1>
                   <img src="../../../assets/infnet.jpeg" alt="infnet logo" />
                   <p class="title-text">Instituto Infnet</p>
                   <p class="description-text">
-                    System Analysis and Development ∙ 2019 - 2023
+                    Análise e Desenvolvimento de Sistemas ∙ 2019 - 2023
+                  </p>
+                  <p class="description-text">
+                    <span class="bold-text">Projeto Acadêmico</span>: Where’s My
+                    Pet? Projeto criado para a conclusão do bloco da matéria de
+                    Desenvolvimento Android com Java e publicado na Play Store.
+                    O aplicativo consiste em compartilhar informações entre os
+                    usuários sobre animais abandonados/perdidos para ajudá-los.
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.study.wheresmypet&hl=pt_BR/"
+                      target="_blank"
+                      ><span class="bold-text link-text"
+                        >Clique aqui para acessar.</span
+                      ></a
+                    >
+                  </p>
+                  <p class="description-text">
+                    <span class="bold-text">Projeto Acadêmico</span>: Poké
+                    Cards. Projeto criado para a conclusão do bloco da matéria
+                    de front-end utilizando VueJS, Vuex e Vue Router. É um
+                    sisteminha de adicionar figurinhas de Pokémon utilizando a
+                    api rest PokéApi.
+                    <a href="https://pokesscards.netlify.app/" target="_blank"
+                      ><span class="bold-text link-text"
+                        >Clique aqui para acessar.</span
+                      ></a
+                    >
                   </p>
                 </div>
               </section>
@@ -140,7 +167,39 @@
           </div>
         </div>
         <footer>
-          <div class="player-wrapper"></div>
+          <div class="player-wrapper">
+            <div class="player-content">
+              <audio id="music-player"></audio>
+              <div class="album-cover">
+                <img
+                  src="../../../assets/cover.jpeg"
+                  alt="portugal the man cover"
+                />
+                <div class="album-name">
+                  <p class="title-text">Feel It Still</p>
+                  <p class="description-text">Portugal The Man</p>
+                </div>
+
+                <input
+                  id="add-favorite"
+                  hidden
+                  name="add-favorite"
+                  type="checkbox"
+                />
+                <label for="add-favorite"></label>
+                <div id="heart">
+                  <span class="material-symbols-outlined">favorite</span>
+                </div>
+              </div>
+              <div class="player-event">
+                <span class="material-symbols-outlined"> skip_previous </span>
+                <span class="material-symbols-outlined" id="play-icon">
+                  play_circle
+                </span>
+                <span class="material-symbols-outlined"> skip_next </span>
+              </div>
+            </div>
+          </div>
         </footer>
       </div>
     </div>
